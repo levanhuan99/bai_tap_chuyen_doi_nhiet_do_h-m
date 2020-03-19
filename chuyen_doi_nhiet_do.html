@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+    <h2> Temperature Converter</h2><br/>
+    <p>Type a value in the Fahrenheit file to convert the va value to Celcius</p><br/>
+    <label>Fahrenheit<input type="number" id="text"/></label><br/>
+    <p id="temprature"> Celcius</p><br/>
+<button onclick="changeTemprature()">change</button>
+</body>
+<script>
+
+    function changeTemprature(f) {
+        f=document.getElementById("text").value;
+        let c=(f-32)*5/9;
+        document.getElementById("temprature").innerHTML=c;
+
+    }
+
+</script>
+</html>
